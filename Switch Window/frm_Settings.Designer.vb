@@ -22,6 +22,7 @@ Partial Class frm_Settings
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Settings))
         Me.gb_PlayerName = New System.Windows.Forms.GroupBox()
         Me.gb_AppSettings = New System.Windows.Forms.GroupBox()
         Me.cb_MsgBoxError = New System.Windows.Forms.CheckBox()
@@ -35,12 +36,15 @@ Partial Class frm_Settings
         Me.txtBox_Settings_Player4 = New System.Windows.Forms.TextBox()
         Me.txtBox_Settings_Player5 = New System.Windows.Forms.TextBox()
         Me.btn_OpenDir = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.gb_PlayerName.SuspendLayout()
         Me.gb_AppSettings.SuspendLayout()
         Me.SuspendLayout()
         '
         'gb_PlayerName
         '
+        Me.gb_PlayerName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_PlayerName.Controls.Add(Me.txtBox_Settings_Player1)
         Me.gb_PlayerName.Controls.Add(Me.txtBox_Settings_Player8)
         Me.gb_PlayerName.Controls.Add(Me.txtBox_Settings_Player2)
@@ -58,6 +62,7 @@ Partial Class frm_Settings
         '
         'gb_AppSettings
         '
+        Me.gb_AppSettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_AppSettings.Controls.Add(Me.cb_MsgBoxError)
         Me.gb_AppSettings.Controls.Add(Me.cb_TopMost)
         Me.gb_AppSettings.Location = New System.Drawing.Point(191, 12)
@@ -95,6 +100,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player1
         '
+        Me.txtBox_Settings_Player1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player1.Location = New System.Drawing.Point(6, 19)
         Me.txtBox_Settings_Player1.Name = "txtBox_Settings_Player1"
@@ -104,6 +111,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player8
         '
+        Me.txtBox_Settings_Player8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player8.Location = New System.Drawing.Point(6, 201)
         Me.txtBox_Settings_Player8.Name = "txtBox_Settings_Player8"
@@ -113,6 +122,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player2
         '
+        Me.txtBox_Settings_Player2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player2.Location = New System.Drawing.Point(6, 45)
         Me.txtBox_Settings_Player2.Name = "txtBox_Settings_Player2"
@@ -122,6 +133,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player7
         '
+        Me.txtBox_Settings_Player7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player7.Location = New System.Drawing.Point(6, 175)
         Me.txtBox_Settings_Player7.Name = "txtBox_Settings_Player7"
@@ -131,6 +144,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player3
         '
+        Me.txtBox_Settings_Player3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_3", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player3.Location = New System.Drawing.Point(6, 71)
         Me.txtBox_Settings_Player3.Name = "txtBox_Settings_Player3"
@@ -140,6 +155,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player6
         '
+        Me.txtBox_Settings_Player6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player6.Location = New System.Drawing.Point(6, 149)
         Me.txtBox_Settings_Player6.Name = "txtBox_Settings_Player6"
@@ -149,6 +166,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player4
         '
+        Me.txtBox_Settings_Player4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_4", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player4.Location = New System.Drawing.Point(6, 97)
         Me.txtBox_Settings_Player4.Name = "txtBox_Settings_Player4"
@@ -158,6 +177,8 @@ Partial Class frm_Settings
         '
         'txtBox_Settings_Player5
         '
+        Me.txtBox_Settings_Player5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Settings_Player5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Settings_Player5.Location = New System.Drawing.Point(6, 123)
         Me.txtBox_Settings_Player5.Name = "txtBox_Settings_Player5"
@@ -174,16 +195,30 @@ Partial Class frm_Settings
         Me.btn_OpenDir.Text = "Dossier d'application"
         Me.btn_OpenDir.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 293)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frm_Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(377, 280)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_OpenDir)
         Me.Controls.Add(Me.gb_AppSettings)
         Me.Controls.Add(Me.gb_PlayerName)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(730, 319)
+        Me.MinimumSize = New System.Drawing.Size(393, 319)
         Me.Name = "frm_Settings"
-        Me.Text = "frm_Settings"
+        Me.Text = "Paramètres d'application"
         Me.gb_PlayerName.ResumeLayout(False)
         Me.gb_PlayerName.PerformLayout()
         Me.gb_AppSettings.ResumeLayout(False)
@@ -205,4 +240,5 @@ Partial Class frm_Settings
     Friend WithEvents cb_MsgBoxError As CheckBox
     Friend WithEvents cb_TopMost As CheckBox
     Friend WithEvents btn_OpenDir As Button
+    Friend WithEvents Button1 As Button
 End Class
