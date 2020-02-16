@@ -85,6 +85,7 @@ Partial Class frm_Settings
         Me.cb_TopMost.AutoSize = True
         Me.cb_TopMost.Checked = Global.Switch_Window.My.MySettings.Default.isTopMost
         Me.cb_TopMost.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.Switch_Window.My.MySettings.Default, "isTopMost", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cb_TopMost.Enabled = False
         Me.cb_TopMost.Location = New System.Drawing.Point(6, 21)
         Me.cb_TopMost.Name = "cb_TopMost"
         Me.cb_TopMost.Size = New System.Drawing.Size(133, 17)
