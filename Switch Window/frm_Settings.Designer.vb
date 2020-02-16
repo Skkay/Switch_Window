@@ -24,8 +24,8 @@ Partial Class frm_Settings
     Private Sub InitializeComponent()
         Me.gb_PlayerName = New System.Windows.Forms.GroupBox()
         Me.gb_AppSettings = New System.Windows.Forms.GroupBox()
-        Me.cb_TopMost = New System.Windows.Forms.CheckBox()
         Me.cb_MsgBoxError = New System.Windows.Forms.CheckBox()
+        Me.cb_TopMost = New System.Windows.Forms.CheckBox()
         Me.txtBox_Settings_Player1 = New System.Windows.Forms.TextBox()
         Me.txtBox_Settings_Player8 = New System.Windows.Forms.TextBox()
         Me.txtBox_Settings_Player2 = New System.Windows.Forms.TextBox()
@@ -34,6 +34,7 @@ Partial Class frm_Settings
         Me.txtBox_Settings_Player6 = New System.Windows.Forms.TextBox()
         Me.txtBox_Settings_Player4 = New System.Windows.Forms.TextBox()
         Me.txtBox_Settings_Player5 = New System.Windows.Forms.TextBox()
+        Me.btn_OpenDir = New System.Windows.Forms.Button()
         Me.gb_PlayerName.SuspendLayout()
         Me.gb_AppSettings.SuspendLayout()
         Me.SuspendLayout()
@@ -66,18 +67,6 @@ Partial Class frm_Settings
         Me.gb_AppSettings.TabStop = False
         Me.gb_AppSettings.Text = "Paramètres d'application"
         '
-        'cb_TopMost
-        '
-        Me.cb_TopMost.AutoSize = True
-        Me.cb_TopMost.Checked = Global.Switch_Window.My.MySettings.Default.isTopMost
-        Me.cb_TopMost.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.Switch_Window.My.MySettings.Default, "isTopMost", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cb_TopMost.Location = New System.Drawing.Point(6, 21)
-        Me.cb_TopMost.Name = "cb_TopMost"
-        Me.cb_TopMost.Size = New System.Drawing.Size(133, 17)
-        Me.cb_TopMost.TabIndex = 0
-        Me.cb_TopMost.Text = "Garder au premier plan"
-        Me.cb_TopMost.UseVisualStyleBackColor = True
-        '
         'cb_MsgBoxError
         '
         Me.cb_MsgBoxError.AutoSize = True
@@ -90,6 +79,18 @@ Partial Class frm_Settings
         Me.cb_MsgBoxError.TabIndex = 1
         Me.cb_MsgBoxError.Text = "MessageBox d'erreur"
         Me.cb_MsgBoxError.UseVisualStyleBackColor = True
+        '
+        'cb_TopMost
+        '
+        Me.cb_TopMost.AutoSize = True
+        Me.cb_TopMost.Checked = Global.Switch_Window.My.MySettings.Default.isTopMost
+        Me.cb_TopMost.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.Switch_Window.My.MySettings.Default, "isTopMost", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cb_TopMost.Location = New System.Drawing.Point(6, 21)
+        Me.cb_TopMost.Name = "cb_TopMost"
+        Me.cb_TopMost.Size = New System.Drawing.Size(133, 17)
+        Me.cb_TopMost.TabIndex = 0
+        Me.cb_TopMost.Text = "Garder au premier plan"
+        Me.cb_TopMost.UseVisualStyleBackColor = True
         '
         'txtBox_Settings_Player1
         '
@@ -163,11 +164,21 @@ Partial Class frm_Settings
         Me.txtBox_Settings_Player5.TabIndex = 4
         Me.txtBox_Settings_Player5.Text = Global.Switch_Window.My.MySettings.Default.Player_5
         '
+        'btn_OpenDir
+        '
+        Me.btn_OpenDir.Location = New System.Drawing.Point(12, 248)
+        Me.btn_OpenDir.Name = "btn_OpenDir"
+        Me.btn_OpenDir.Size = New System.Drawing.Size(173, 23)
+        Me.btn_OpenDir.TabIndex = 10
+        Me.btn_OpenDir.Text = "Dossier d'application"
+        Me.btn_OpenDir.UseVisualStyleBackColor = True
+        '
         'frm_Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_OpenDir)
         Me.Controls.Add(Me.gb_AppSettings)
         Me.Controls.Add(Me.gb_PlayerName)
         Me.Name = "frm_Settings"
@@ -192,4 +203,5 @@ Partial Class frm_Settings
     Friend WithEvents gb_AppSettings As GroupBox
     Friend WithEvents cb_MsgBoxError As CheckBox
     Friend WithEvents cb_TopMost As CheckBox
+    Friend WithEvents btn_OpenDir As Button
 End Class
