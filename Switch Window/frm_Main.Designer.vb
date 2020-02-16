@@ -22,6 +22,7 @@ Partial Class frm_Main
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Main))
         Me.btn_Settings = New System.Windows.Forms.Button()
         Me.btn_f1 = New System.Windows.Forms.Button()
         Me.btn_f2 = New System.Windows.Forms.Button()
@@ -43,170 +44,213 @@ Partial Class frm_Main
         '
         'btn_Settings
         '
+        Me.btn_Settings.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_Settings.Location = New System.Drawing.Point(12, 220)
         Me.btn_Settings.Name = "btn_Settings"
-        Me.btn_Settings.Size = New System.Drawing.Size(153, 23)
+        Me.btn_Settings.Size = New System.Drawing.Size(183, 23)
         Me.btn_Settings.TabIndex = 4
+        Me.btn_Settings.TabStop = False
         Me.btn_Settings.Text = "Paramètres"
         Me.btn_Settings.UseVisualStyleBackColor = True
         '
         'btn_f1
         '
-        Me.btn_f1.Location = New System.Drawing.Point(138, 11)
+        Me.btn_f1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f1.Location = New System.Drawing.Point(168, 11)
         Me.btn_f1.Name = "btn_f1"
         Me.btn_f1.Size = New System.Drawing.Size(27, 22)
         Me.btn_f1.TabIndex = 11
+        Me.btn_f1.TabStop = False
         Me.btn_f1.Text = "F1"
         Me.btn_f1.UseVisualStyleBackColor = True
         '
         'btn_f2
         '
-        Me.btn_f2.Location = New System.Drawing.Point(138, 37)
+        Me.btn_f2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f2.Location = New System.Drawing.Point(168, 37)
         Me.btn_f2.Name = "btn_f2"
         Me.btn_f2.Size = New System.Drawing.Size(27, 22)
         Me.btn_f2.TabIndex = 12
+        Me.btn_f2.TabStop = False
         Me.btn_f2.Text = "F2"
         Me.btn_f2.UseVisualStyleBackColor = True
         '
         'btn_f5
         '
-        Me.btn_f5.Location = New System.Drawing.Point(138, 115)
+        Me.btn_f5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f5.Location = New System.Drawing.Point(168, 115)
         Me.btn_f5.Name = "btn_f5"
         Me.btn_f5.Size = New System.Drawing.Size(27, 22)
         Me.btn_f5.TabIndex = 13
+        Me.btn_f5.TabStop = False
         Me.btn_f5.Text = "F5"
         Me.btn_f5.UseVisualStyleBackColor = True
         '
         'btn_f6
         '
-        Me.btn_f6.Location = New System.Drawing.Point(138, 141)
+        Me.btn_f6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f6.Location = New System.Drawing.Point(168, 141)
         Me.btn_f6.Name = "btn_f6"
         Me.btn_f6.Size = New System.Drawing.Size(27, 22)
         Me.btn_f6.TabIndex = 14
+        Me.btn_f6.TabStop = False
         Me.btn_f6.Text = "F6"
         Me.btn_f6.UseVisualStyleBackColor = True
         '
         'btn_f7
         '
-        Me.btn_f7.Location = New System.Drawing.Point(138, 167)
+        Me.btn_f7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f7.Location = New System.Drawing.Point(168, 167)
         Me.btn_f7.Name = "btn_f7"
         Me.btn_f7.Size = New System.Drawing.Size(27, 22)
         Me.btn_f7.TabIndex = 15
+        Me.btn_f7.TabStop = False
         Me.btn_f7.Text = "F7"
         Me.btn_f7.UseVisualStyleBackColor = True
         '
         'btn_f8
         '
-        Me.btn_f8.Location = New System.Drawing.Point(138, 193)
+        Me.btn_f8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f8.Location = New System.Drawing.Point(168, 193)
         Me.btn_f8.Name = "btn_f8"
         Me.btn_f8.Size = New System.Drawing.Size(27, 22)
         Me.btn_f8.TabIndex = 16
+        Me.btn_f8.TabStop = False
         Me.btn_f8.Text = "F8"
         Me.btn_f8.UseVisualStyleBackColor = True
         '
         'btn_f4
         '
-        Me.btn_f4.Location = New System.Drawing.Point(138, 89)
+        Me.btn_f4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f4.Location = New System.Drawing.Point(168, 89)
         Me.btn_f4.Name = "btn_f4"
         Me.btn_f4.Size = New System.Drawing.Size(27, 22)
         Me.btn_f4.TabIndex = 17
+        Me.btn_f4.TabStop = False
         Me.btn_f4.Text = "F4"
         Me.btn_f4.UseVisualStyleBackColor = True
         '
         'btn_f3
         '
-        Me.btn_f3.Location = New System.Drawing.Point(138, 63)
+        Me.btn_f3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_f3.Location = New System.Drawing.Point(168, 63)
         Me.btn_f3.Name = "btn_f3"
         Me.btn_f3.Size = New System.Drawing.Size(27, 22)
         Me.btn_f3.TabIndex = 18
+        Me.btn_f3.TabStop = False
         Me.btn_f3.Text = "F3"
         Me.btn_f3.UseVisualStyleBackColor = True
         '
         'txtBox_Player8
         '
+        Me.txtBox_Player8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player8.Location = New System.Drawing.Point(12, 194)
         Me.txtBox_Player8.Name = "txtBox_Player8"
         Me.txtBox_Player8.ReadOnly = True
-        Me.txtBox_Player8.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player8.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player8.TabIndex = 10
+        Me.txtBox_Player8.TabStop = False
         Me.txtBox_Player8.Text = Global.Switch_Window.My.MySettings.Default.Player_8
         '
         'txtBox_Player7
         '
+        Me.txtBox_Player7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player7.Location = New System.Drawing.Point(12, 168)
         Me.txtBox_Player7.Name = "txtBox_Player7"
         Me.txtBox_Player7.ReadOnly = True
-        Me.txtBox_Player7.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player7.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player7.TabIndex = 9
+        Me.txtBox_Player7.TabStop = False
         Me.txtBox_Player7.Text = Global.Switch_Window.My.MySettings.Default.Player_7
         '
         'txtBox_Player6
         '
+        Me.txtBox_Player6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player6.Location = New System.Drawing.Point(12, 142)
         Me.txtBox_Player6.Name = "txtBox_Player6"
         Me.txtBox_Player6.ReadOnly = True
-        Me.txtBox_Player6.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player6.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player6.TabIndex = 8
+        Me.txtBox_Player6.TabStop = False
         Me.txtBox_Player6.Text = Global.Switch_Window.My.MySettings.Default.Player_6
         '
         'txtBox_Player5
         '
+        Me.txtBox_Player5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player5.Location = New System.Drawing.Point(12, 116)
         Me.txtBox_Player5.Name = "txtBox_Player5"
         Me.txtBox_Player5.ReadOnly = True
-        Me.txtBox_Player5.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player5.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player5.TabIndex = 7
+        Me.txtBox_Player5.TabStop = False
         Me.txtBox_Player5.Text = Global.Switch_Window.My.MySettings.Default.Player_5
         '
         'txtBox_Player4
         '
+        Me.txtBox_Player4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_4", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player4.Location = New System.Drawing.Point(12, 90)
         Me.txtBox_Player4.Name = "txtBox_Player4"
         Me.txtBox_Player4.ReadOnly = True
-        Me.txtBox_Player4.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player4.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player4.TabIndex = 6
+        Me.txtBox_Player4.TabStop = False
         Me.txtBox_Player4.Text = Global.Switch_Window.My.MySettings.Default.Player_4
         '
         'txtBox_Player3
         '
+        Me.txtBox_Player3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_3", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player3.Location = New System.Drawing.Point(12, 64)
         Me.txtBox_Player3.Name = "txtBox_Player3"
         Me.txtBox_Player3.ReadOnly = True
-        Me.txtBox_Player3.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player3.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player3.TabIndex = 5
+        Me.txtBox_Player3.TabStop = False
         Me.txtBox_Player3.Text = Global.Switch_Window.My.MySettings.Default.Player_3
         '
         'txtBox_Player2
         '
+        Me.txtBox_Player2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player2.Location = New System.Drawing.Point(12, 38)
         Me.txtBox_Player2.Name = "txtBox_Player2"
         Me.txtBox_Player2.ReadOnly = True
-        Me.txtBox_Player2.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player2.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player2.TabIndex = 2
+        Me.txtBox_Player2.TabStop = False
         Me.txtBox_Player2.Text = Global.Switch_Window.My.MySettings.Default.Player_2
         '
         'txtBox_Player1
         '
+        Me.txtBox_Player1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBox_Player1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.Switch_Window.My.MySettings.Default, "Player_1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBox_Player1.Location = New System.Drawing.Point(12, 12)
         Me.txtBox_Player1.Name = "txtBox_Player1"
         Me.txtBox_Player1.ReadOnly = True
-        Me.txtBox_Player1.Size = New System.Drawing.Size(120, 20)
+        Me.txtBox_Player1.Size = New System.Drawing.Size(150, 20)
         Me.txtBox_Player1.TabIndex = 0
+        Me.txtBox_Player1.TabStop = False
         Me.txtBox_Player1.Text = Global.Switch_Window.My.MySettings.Default.Player_1
         '
         'frm_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(207, 252)
         Me.Controls.Add(Me.btn_f3)
         Me.Controls.Add(Me.btn_f4)
         Me.Controls.Add(Me.btn_f8)
@@ -224,8 +268,12 @@ Partial Class frm_Main
         Me.Controls.Add(Me.btn_Settings)
         Me.Controls.Add(Me.txtBox_Player2)
         Me.Controls.Add(Me.txtBox_Player1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(905, 291)
+        Me.MinimumSize = New System.Drawing.Size(223, 291)
         Me.Name = "frm_Main"
-        Me.Text = "Form1"
+        Me.Text = "Switch"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
