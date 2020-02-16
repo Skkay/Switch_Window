@@ -96,5 +96,35 @@
         frm_Settings.ShowDialog()
     End Sub
 
+    Private Sub btn_f1_Click(sender As Object, e As EventArgs) Handles btn_f1.Click
+        setOnForground(0)
+    End Sub
 
+    Private Sub btn_f2_Click(sender As Object, e As EventArgs) Handles btn_f2.Click
+        setOnForground(1)
+    End Sub
+
+    Private Sub btn_f3_Click(sender As Object, e As EventArgs) Handles btn_f3.Click
+        setOnForground(2)
+    End Sub
+
+    Private Sub btn_f4_Click(sender As Object, e As EventArgs) Handles btn_f4.Click
+        setOnForground(3)
+    End Sub
+
+    Private Sub btn_f5_Click(sender As Object, e As EventArgs) Handles btn_f5.Click
+        setOnForground(4)
+    End Sub
+
+    Private Sub btn_f6_Click(sender As Object, e As EventArgs) Handles btn_f6.Click
+        setOnForground(5)
+    End Sub
+
+    Private Sub btn_f7_Click(sender As Object, e As EventArgs) Handles btn_f7.Click
+        setOnForground(6)
+    End Sub
+
+    Private Sub btn_f8_Click(sender As Object, e As EventArgs) Handles btn_f8.Click
+        setOnForground(7)
+    End Sub
 End Class
