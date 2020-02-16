@@ -26,5 +26,11 @@
     <Setting Name="Player_8" Type="System.String" Scope="User">
       <Value Profile="(Default)">p8</Value>
     </Setting>
+    <Setting Name="isTopMost" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="isShowingMsgBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
