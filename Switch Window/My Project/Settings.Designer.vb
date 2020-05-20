@@ -173,6 +173,102 @@ Namespace My
                 Me("isShowingMsgBox") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_1() As String
+            Get
+                Return CType(Me("Shortcut_Player_1"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_2() As String
+            Get
+                Return CType(Me("Shortcut_Player_2"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_3() As String
+            Get
+                Return CType(Me("Shortcut_Player_3"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_3") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_4() As String
+            Get
+                Return CType(Me("Shortcut_Player_4"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_4") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_5() As String
+            Get
+                Return CType(Me("Shortcut_Player_5"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_5") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_6() As String
+            Get
+                Return CType(Me("Shortcut_Player_6"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_6") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_7() As String
+            Get
+                Return CType(Me("Shortcut_Player_7"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_7") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Shortcut_Player_8() As String
+            Get
+                Return CType(Me("Shortcut_Player_8"),String)
+            End Get
+            Set
+                Me("Shortcut_Player_8") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

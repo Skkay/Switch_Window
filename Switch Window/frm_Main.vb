@@ -29,15 +29,18 @@
 
 
     Private Sub frm_Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RegisterHotKey(Me.Handle, HOTKEY_ID1, FsModifiers.None, Keys.F1)
-        RegisterHotKey(Me.Handle, HOTKEY_ID2, FsModifiers.None, Keys.F2)
-        RegisterHotKey(Me.Handle, HOTKEY_ID3, FsModifiers.None, Keys.F3)
-        RegisterHotKey(Me.Handle, HOTKEY_ID4, FsModifiers.None, Keys.F4)
-        RegisterHotKey(Me.Handle, HOTKEY_ID5, FsModifiers.None, Keys.F5)
-        RegisterHotKey(Me.Handle, HOTKEY_ID6, FsModifiers.None, Keys.F6)
-        RegisterHotKey(Me.Handle, HOTKEY_ID7, FsModifiers.None, Keys.F7)
-        RegisterHotKey(Me.Handle, HOTKEY_ID8, FsModifiers.None, Keys.F8)
+        Reload_Hotkey()
+    End Sub
 
+    Private Sub Reload_Hotkey()
+        RegisterHotKey(Me.Handle, HOTKEY_ID1, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_1 <> "", My.Settings.Shortcut_Player_1, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID2, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_2 <> "", My.Settings.Shortcut_Player_2, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID3, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_3 <> "", My.Settings.Shortcut_Player_3, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID4, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_4 <> "", My.Settings.Shortcut_Player_4, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID5, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_5 <> "", My.Settings.Shortcut_Player_5, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID6, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_6 <> "", My.Settings.Shortcut_Player_6, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID7, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_7 <> "", My.Settings.Shortcut_Player_7, "None")), Keys))
+        RegisterHotKey(Me.Handle, HOTKEY_ID8, FsModifiers.None, CType([Enum].Parse(GetType(Keys), If(My.Settings.Shortcut_Player_8 <> "", My.Settings.Shortcut_Player_8, "None")), Keys))
     End Sub
 
 
@@ -94,6 +97,7 @@
     Private Sub btn_Settings_Click(sender As Object, e As EventArgs) Handles btn_Settings.Click
         Dim frm_Settings = New frm_Settings()
         frm_Settings.ShowDialog()
+        Reload_Hotkey()
     End Sub
 
     Private Sub btn_f1_Click(sender As Object, e As EventArgs) Handles btn_f1.Click

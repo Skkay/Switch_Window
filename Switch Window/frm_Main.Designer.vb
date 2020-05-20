@@ -62,7 +62,7 @@ Partial Class frm_Main
         Me.btn_f1.Size = New System.Drawing.Size(27, 22)
         Me.btn_f1.TabIndex = 11
         Me.btn_f1.TabStop = False
-        Me.btn_f1.Text = "F1"
+        Me.btn_f1.Text = "1"
         Me.btn_f1.UseVisualStyleBackColor = True
         '
         'btn_f2
@@ -73,7 +73,7 @@ Partial Class frm_Main
         Me.btn_f2.Size = New System.Drawing.Size(27, 22)
         Me.btn_f2.TabIndex = 12
         Me.btn_f2.TabStop = False
-        Me.btn_f2.Text = "F2"
+        Me.btn_f2.Text = "2"
         Me.btn_f2.UseVisualStyleBackColor = True
         '
         'btn_f5
@@ -84,7 +84,7 @@ Partial Class frm_Main
         Me.btn_f5.Size = New System.Drawing.Size(27, 22)
         Me.btn_f5.TabIndex = 13
         Me.btn_f5.TabStop = False
-        Me.btn_f5.Text = "F5"
+        Me.btn_f5.Text = "5"
         Me.btn_f5.UseVisualStyleBackColor = True
         '
         'btn_f6
@@ -95,7 +95,7 @@ Partial Class frm_Main
         Me.btn_f6.Size = New System.Drawing.Size(27, 22)
         Me.btn_f6.TabIndex = 14
         Me.btn_f6.TabStop = False
-        Me.btn_f6.Text = "F6"
+        Me.btn_f6.Text = "6"
         Me.btn_f6.UseVisualStyleBackColor = True
         '
         'btn_f7
@@ -106,7 +106,7 @@ Partial Class frm_Main
         Me.btn_f7.Size = New System.Drawing.Size(27, 22)
         Me.btn_f7.TabIndex = 15
         Me.btn_f7.TabStop = False
-        Me.btn_f7.Text = "F7"
+        Me.btn_f7.Text = "7"
         Me.btn_f7.UseVisualStyleBackColor = True
         '
         'btn_f8
@@ -117,7 +117,7 @@ Partial Class frm_Main
         Me.btn_f8.Size = New System.Drawing.Size(27, 22)
         Me.btn_f8.TabIndex = 16
         Me.btn_f8.TabStop = False
-        Me.btn_f8.Text = "F8"
+        Me.btn_f8.Text = "8"
         Me.btn_f8.UseVisualStyleBackColor = True
         '
         'btn_f4
@@ -128,7 +128,7 @@ Partial Class frm_Main
         Me.btn_f4.Size = New System.Drawing.Size(27, 22)
         Me.btn_f4.TabIndex = 17
         Me.btn_f4.TabStop = False
-        Me.btn_f4.Text = "F4"
+        Me.btn_f4.Text = "4"
         Me.btn_f4.UseVisualStyleBackColor = True
         '
         'btn_f3
@@ -139,7 +139,7 @@ Partial Class frm_Main
         Me.btn_f3.Size = New System.Drawing.Size(27, 22)
         Me.btn_f3.TabIndex = 18
         Me.btn_f3.TabStop = False
-        Me.btn_f3.Text = "F3"
+        Me.btn_f3.Text = "3"
         Me.btn_f3.UseVisualStyleBackColor = True
         '
         'txtBox_Player8
